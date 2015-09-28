@@ -1,7 +1,10 @@
-## Containers Done Right
+## Containers
+## Done Right
 (according to yours truly, in all humility)
 
-Florian Haas, [`florian@hastexo.com`](mailto:florian@hastexo.com)
+Florian Haas
+
+[`florian@hastexo.com`](mailto:florian@hastexo.com)
 
 [@xahteiwi](https://twitter.com/xahteiwi) / [@hastexo](https://twitter.com/hastexo)
 
@@ -27,13 +30,3 @@ You should
 high availability
 Note:
 - It also doesn't hurt if you've worked with high availability systems.
-
-
-Let's talk about
-## Automation
-
-
-# How
-can we automate
-### virtual systems
-in OpenStack?
