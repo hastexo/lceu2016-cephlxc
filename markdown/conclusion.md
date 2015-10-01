@@ -1,15 +1,43 @@
-## LXC
+### LXC
 ### + OverlayFS
 ### + AppArmor
 ### + APT
 ### + Pacemaker
 --------
-## = Awesome
+## = Awesome <!-- .element class="fragment" -->
+
+
+# But
+Where to go from here?
+
+
+## DRBD + XFS <!-- .element: class="fragment current-visible" -->
+## CephFS <!-- .element: class="fragment current-visible" -->
+
+
+## `libvirt-lxc` <!-- .element class="fragment current-visible" -->
+## `systemd-nspawn` <!-- .element class="fragment current-visible" -->
+
+
+## Pacemaker <!-- .element class="fragment current-visible" -->
+## fleet <!-- .element class="fragment current-visible" -->
+
+
+<!-- .slide: data-background-image="images/stack-future.svg" data-background-size="contain" -->
+
+
+#### systemd
+#### + OverlayFS
+#### + AppArmor
+#### + APT
+#### + Ceph
+#### + fleet
+--------
+### = Moar Awesome? <!-- .element class="fragment" -->
 
 
 # More
 ### information
-
 
 
 <!-- .slide: data-background-image="images/by-sa.svg" data-background-size="contain" -->
