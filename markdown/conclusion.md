@@ -34,10 +34,6 @@ Where to go from here?
 ### = Moar Awesome? <!-- .element class="fragment" -->
 
 
-# More
-### information
-
-
 <!-- .slide: data-background-image="images/by-sa.svg" data-background-size="contain" -->
 http://hastexo.github.io/lceu2015
 
