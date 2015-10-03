@@ -1,6 +1,5 @@
 ### LXC
 ### + OverlayFS
-### + AppArmor
 ### + APT
 ### + Pacemaker
 --------
@@ -28,7 +27,6 @@ Where to go from here?
 
 #### systemd
 #### + OverlayFS
-#### + AppArmor
 #### + APT
 #### + Ceph
 #### + fleet
