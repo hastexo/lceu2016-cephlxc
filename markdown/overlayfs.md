@@ -84,3 +84,23 @@ Note:
 - lxc-attach -n bash
 - ps -AHfww
 - netstat -lntp
+
+
+# How
+does this
+# help
+with application containers?
+
+Note: So this means that on any host we can have our host filesystem
+as the template for any number of containers using the same
+OS. Anything that is installed on the host, all containers inherit,
+but they all only run exactly the services they need. And if there is
+any piece of software that we need to update, we just do so on our
+host, and as soon as we remount the overlays and restart each
+container, it is immediately updated.
+
+But that still leaves us with two problems:
+- We have a window of undefined behavior while the upgrade is underway
+  and containers are still running.
+- Having to do this manually doesn't scale; we have to find an
+  appropriate means of automating it.
