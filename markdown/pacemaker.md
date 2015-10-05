@@ -3,13 +3,14 @@
 Note: Pacemaker can come in here to bail us out.
 
 
-### High availability cluster manager
+### High availability
+## Cluster manager
 
 Note: The Pacemaker stack is the default Linux high-availability
 stack, and one of its qualities is that it is...
 
 
-### Application agnostic
+## Application agnostic
 
 Note: ... application agnostic, so that effectively it can be made to
 manage any cluster resource in a highly-available fashion.
