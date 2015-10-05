@@ -1,6 +1,6 @@
 ### Manageable
 ## Application Containers
-Lighting Quick Updates, Scaleable Security, Easy High Availability
+Lightning Quick Updates, Scaleable Security, Easy High Availability
 
 [`florian.haas@hastexo.com`](mailto:florian.haas@hastexo.com)
 
