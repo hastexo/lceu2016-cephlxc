@@ -1,0 +1,20 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: stop fleet service
+    service:
+      name: fleet
+      state: stopped
+ 
+  - name: stop etcd service
+    service:
+      name: etcd
+      state: stopped
+
+  - name: wipe etcd state
+    file:
+      name: /var/lib/etcd/default
+      state: absent

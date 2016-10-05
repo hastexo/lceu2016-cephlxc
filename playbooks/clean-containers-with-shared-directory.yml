@@ -1,0 +1,18 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: install python-lxc package
+    apt:
+      name: python-lxc
+      state: latest
+  
+  - name: remove "test" container
+    lxc_container:
+      template: ubuntu
+      name: "test-{{ ansible_hostname }}"
+      container_config:
+      - "lxc.mount.entry = /var/lib/lxc/shared mnt none bind 0 0"
+      state: absent
