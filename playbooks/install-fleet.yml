@@ -1,0 +1,15 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: install fleet package
+    apt:
+      name: fleet
+      state: latest
+  
+  - name: start fleet service
+    service:
+      name: fleet
+      state: started

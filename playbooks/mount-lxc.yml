@@ -1,0 +1,20 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: create shared LXC directory
+    file:
+      path: /var/lib/lxc
+      state: directory
+      owner: root
+      group: root
+
+  - name: mount CephFS shared directory
+    mount:
+      src: daisy,eric,frank:/lxc
+      fstype: ceph
+      opts: secretfile=/etc/ceph/cephfs.secret,name=cephfs
+      name: /var/lib/lxc
+      state: mounted

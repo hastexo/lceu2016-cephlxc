@@ -1,0 +1,13 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: unmount CephFS shared directory
+    mount:
+      src: daisy,eric,frank:/shared
+      fstype: ceph
+      opts: secretfile=/etc/ceph/cephfs.secret,name=cephfs
+      name: /var/lib/lxc/shared
+      state: unmounted

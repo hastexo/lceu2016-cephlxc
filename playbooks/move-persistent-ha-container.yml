@@ -1,0 +1,30 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: install python-lxc package
+    apt:
+      name: python-lxc
+      state: latest
+  
+- hosts: alice
+  become: true
+  become_user: root
+  
+  tasks:
+  - name: stop "ha" container
+    lxc_container:
+      name: "ha"
+      state: stopped
+
+- hosts: bob
+  become: true
+  become_user: root
+  
+  tasks:
+  - name: start "ha" container
+    lxc_container:
+      name: "ha"
+      state: started
