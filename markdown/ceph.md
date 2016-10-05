@@ -7,16 +7,16 @@
 ### release
 
 
-### Object Store
-### Block device
-### REST object access
-### Filesystem
+### Object Store ✓
+### Block device ✓
+### REST object access ✓
+### Filesystem ✗
 
 
-### Object Store
-### Block device
-### REST object access
-### Filesystem
+### Object Store ✓
+### Block device ✓
+### REST object access ✓
+### Filesystem ✓
 
 
 ### CephFS in Jewel
