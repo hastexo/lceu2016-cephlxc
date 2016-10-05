@@ -1,6 +1,7 @@
-### Manageable
-## Application Containers
-Lightning Quick Updates, Scaleable Security, Easy High Availability
+## CephFS
+### and
+## LXC
+Container High Availability and Scalability, Redefined
 
 [`florian.haas@hastexo.com`](mailto:florian.haas@hastexo.com)
 
