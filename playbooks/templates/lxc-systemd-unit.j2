@@ -1,0 +1,11 @@
+[Unit]
+Description=Container {{ item }} service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/lxc-start -d -n {{ item }}
+ExecStop=/usr/bin/lxc-stop -n {{ item }}
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
