@@ -3,7 +3,7 @@ Description=Container {{ item }} service
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/lxc-start -d -n {{ item }}
+ExecStart=/usr/bin/lxc-start -F -n {{ item }}
 ExecStop=/usr/bin/lxc-stop -n {{ item }}
 RemainAfterExit=yes
 
