@@ -1,0 +1,12 @@
+---
+- hosts: alice
+  become: true
+  become_user: root
+
+  tasks:
+  - name: deploy fleet unit file
+    template:
+      src: lxc-fleet-unit.j2
+      dest: "~/lxc-{{ item }}@.service"
+    with_items:
+    - test
