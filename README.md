@@ -1,10 +1,7 @@
-# Manageable Application Containers
-Lighting Quick Updates, Scaleable Security, Easy High Availability
-
-This is a presentation for LinuxCon Europe, presented in Dublin on
-October 5, 2015.
+This is a presentation for LinuxCon Europe, presented in Berlin on
+October 6, 2016.
 
 The canonical location for the rendered presentation is
-http://hastexo.github.io/lceu2015.
+http://fghaas.github.io/lceu2016-cephlxc.
 
 For licensing terms, please check [LICENSE](LICENSE).
