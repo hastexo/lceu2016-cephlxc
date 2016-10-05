@@ -1,52 +1,12 @@
-## Pacemaker
-
-Note: Pacemaker can come in here to bail us out.
+## LXC HA in 2015
 
 
-### High availability
-## Cluster manager
-
-Note: The Pacemaker stack is the default Linux high-availability
-stack, and one of its qualities is that it is...
-
-
-## Application agnostic
-
-Note: ... application agnostic, so that effectively it can be made to
-manage any cluster resource in a highly-available fashion.
-
-
-Can manage
-## LXC
-through
-### libvirt
-or
-### native resource agent
-
-Note: Pacemaker offers support for managing LXC containers not in one,
-but two ways:
-
-- via libvirt, using the `VirtualDomain` resource agent, or
-- via a native `lxc` resource agent, using the `lxc` userspace
-  toolchain.
-
-
-Can manage
-## filesystems
-
-Note: Pacemaker is perfectly capable of managing filesystem mounts as
-well, including OverlayFS mounts (and of course, mounts for regular
-local filesystems).
-
-
-Can manage
-## storage
-& data replication
-
-Note: and finally, we can also use Pacemaker to enable and disable
-access to storage and data replication facilities.
-
-So how can we use all that to our advantage?
+### LXC
+### + OverlayFS
+### + APT
+### + Pacemaker
+--------
+## = Awesome
 
 
 <!-- .slide: data-background-image="images/stack.svg" data-background-size="contain" -->
@@ -72,8 +32,3 @@ that APT could get invoked within the failover window on the other
 node. So the `Pre-Invoke` check would have to be a little more
 involved.
 
-
-<!-- .slide: data-background-iframe="http://localhost:4200/" data-background-size="contain" -->
-
-Note: This is a simple failover. We just put one node in standby,
-watch what it's doing, and taking it out of standby again.
