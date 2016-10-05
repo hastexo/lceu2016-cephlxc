@@ -1,0 +1,18 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: install python-lxc package
+    apt:
+      name: python-lxc
+      state: latest
+  
+  - name: stop "ha" container
+    lxc_container:
+      template: ubuntu
+      name: "ha"
+      container_config:
+      - "lxc.mount.entry = /var/lib/lxc/shared mnt none bind 0 0"
+      state: stopped
