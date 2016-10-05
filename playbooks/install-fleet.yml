@@ -12,4 +12,4 @@
   - name: start fleet service
     service:
       name: fleet
-      state: started
+      state: restarted
