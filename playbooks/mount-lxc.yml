@@ -15,6 +15,6 @@
     mount:
       src: daisy,eric,frank:/lxc
       fstype: ceph
-      opts: secretfile=/etc/ceph/cephfs.secret,name=cephfs
+      opts: secretfile=/etc/ceph/cephfs.secret,name=cephfs,_netdev
       name: /var/lib/lxc
       state: mounted
