@@ -4,6 +4,12 @@
   become_user: root
 
   tasks:
+
+  - name: install ceph-fs-common package
+    apt:
+      name: ceph-fs-common
+      state: latest
+
   - name: create shared LXC directory
     file:
       path: /var/lib/lxc/shared
