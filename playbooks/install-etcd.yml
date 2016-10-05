@@ -1,0 +1,20 @@
+---
+- hosts: lxc
+  become: true
+  become_user: root
+
+  tasks:
+  - name: install etcd package
+    apt:
+      name: etcd
+      state: latest
+
+  - name: deploy etcd defaults file
+    template:
+      src: etcd.j2
+      dest: /etc/default/etcd
+  
+  - name: start etcd service
+    service:
+      name: etcd
+      state: started
