@@ -22,3 +22,29 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 Actually, why not? <!-- .element class="fragment" -->
+
+
+<!-- .slide: data-background-iframe="http://localhost:4200/" data-background-size="contain" -->
+
+
+# LXC
+with
+## fleet
+
+
+```ini
+[Unit]
+Description=Container {{ item }} service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/lxc-start -d -n {{ item }}
+ExecStop=/usr/bin/lxc-stop -n {{ item }}
+RemainAfterExit=yes
+
+[X-Fleet]
+Conflicts=lxc-{{ item }}@*.service
+```
+
+
+<!-- .slide: data-background-iframe="http://localhost:4200/" data-background-size="contain" -->
