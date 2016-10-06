@@ -12,7 +12,7 @@
   - name: stop "test" container
     lxc_container:
       template: ubuntu
-      name: "test-{{ ansible_hostname }}"
+      name: "test"
       container_config:
       - "lxc.mount.entry = /var/lib/lxc/shared mnt none bind 0 0"
       state: stopped
