@@ -24,9 +24,6 @@ WantedBy=multi-user.target
 Actually, why not? <!-- .element class="fragment" -->
 
 
-<!-- .slide: data-background-iframe="http://localhost:4200/" data-background-size="contain" -->
-
-
 # LXC
 with
 ## fleet
