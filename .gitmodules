@@ -1,7 +1,6 @@
 [submodule "reveal.js"]
 	path = reveal.js
-	url = https://github.com/fghaas/reveal.js
-	branch = asciinema-autoplay
+	url = https://github.com/hakimel/reveal.js
 [submodule "highlight.js"]
 	path = highlight.js
 	url = https://github.com/isagalaev/highlight.js
