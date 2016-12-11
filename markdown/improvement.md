@@ -11,7 +11,7 @@
 
 
 <!-- .slide: data-background-image="images/stack-future.svg" data-background-size="contain" -->
-# Not yet <!-- .element class="fragment stamp" -->
+# Not quite <!-- .element class="fragment stamp" -->
 
 
 #### systemd
